@@ -28,8 +28,8 @@ const fetchCoordsByIP = function(ip, callback) {
       return;
     } 
 
-    const latitude = body.latitude
-    const longitude = body.longitude
+    const latitude = body.latitude;
+    const longitude = body.longitude;
     callback(null, {latitude, longitude});
   });
 };
@@ -75,4 +75,4 @@ const nextISSTimesForMyLocation = function(callback) {
   });
 };
 
-module.exports = { fetchMyIP, fetchCoordsByIP, fetchISSFlyOverTimes, nextISSTimesForMyLocation };
+module.exports = { nextISSTimesForMyLocation };
